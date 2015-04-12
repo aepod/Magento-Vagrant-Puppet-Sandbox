@@ -47,6 +47,19 @@ To use:
 4. Point your web browser or test scripts there
 
 ---
+Magento Performance Toolkit:
+
+For some background see: http://aepod.com/using-the-magento-performance-toolkit/
+
+This gets installed and run with the standup on the web servers. You do not need to import the profiles etc, if you ran the magento setup scripts with the stand up, everything should be automated.
+
+You will need to standup the jmeter server to use the built in jmeter tests. Look in /usr/local/apache-jmeter/ you will find the Java and jmeter already installed, and the tests will be in the tests/ directory. You may need to edit the host file if you are testing against monolith.
+
+To Use: TBD
+---
+
+
+---
 haproxy stats available once web is up at: 
 http://www.idealphp.com/haproxy?stats
 
