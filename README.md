@@ -56,10 +56,9 @@ This gets installed and run with the standup on the web servers. You do not need
 You will need to standup the jmeter server to use the built in jmeter tests. Look in /usr/local/apache-jmeter/ you will find the Java and jmeter already installed, and the tests will be in the tests/ directory. You may need to edit the host file if you are testing against monolith.
 
 To Use: TBD
----
-
 
 ---
+
 haproxy stats available once web is up at: 
 http://www.idealphp.com/haproxy?stats
 
