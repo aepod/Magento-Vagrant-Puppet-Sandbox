@@ -40,6 +40,7 @@ To use this:
 Monolith: 
 A single box, with web, db, redis. Still requires the puppetmaster to be up. 
 To use:
+
 1. Ensure puppet is up `vagrant up puppet`
 2. Bring up monolith `vagrant up monolith`
 3. Change your DNS entry for www.idealphp.com to 192.168.20.21 (This is sort of a pain sorry)
