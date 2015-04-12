@@ -1,0 +1,23 @@
+commands:
+  N98\Magento\Command\Installer\InstallCommand:
+    installation:
+       defaults:
+        currency: US
+        locale: en_US
+        timezone: America/Chicago
+        use_secure: no
+        use_rewrites: yes
+        session_save: files
+        admin_username: admin
+        admin_firstname: John
+        admin_lastname: Doe
+        admin_password: 5678password
+        admin_frontname: admin
+        admin_email: admin@idealphp.com
+        encryption_key: ccd897b62071acd3ecbc087528d43657
+    magento-packages:
+      - name: magento1910
+        version: 1.9.1.0
+        dist:
+          url: file:///vagrant/magento-1.9.1.0.zip
+          type: zip
