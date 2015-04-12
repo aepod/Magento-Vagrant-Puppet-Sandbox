@@ -60,7 +60,7 @@ Puppet Modules:
 ---
 TODO:
 
-1. Improve haproxy, add stats and better fencing for web servers (http://www.networkinghowtos.com/howto/viewing-haproxy-statistics/)
+1. Improve haproxy (check is not looking at php, only nginx)
 2. Improve Puppet, make cluster dynamic
 3. Puppet the install_scripts and puppet master server
 4. Clean up Root password crap
