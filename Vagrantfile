@@ -23,10 +23,7 @@ Vagrant.configure(2) do |config|
 	db.vm.network "private_network", ip: "192.168.200.11"
 	db.vm.provision "shell", path: "scripts/initial_common.sh"
 	db.vm.provision "shell", path: "scripts/initial_puppetcert.sh"
-	db.vm.provision "shell", path: "scripts/db/initial_setup.sh"
-    db.vm.provision "puppet_server" do |puppet|
-      puppet.puppet_node = "db.localdomain"
-    end			
+	db.vm.provision "shell", path: "scripts/db/initial_setup.sh"		
   end  
 
   # BOX: web
@@ -53,9 +50,6 @@ Vagrant.configure(2) do |config|
     web.vm.provision "shell", path: "scripts/initial_common.sh"
     web.vm.provision "shell", path: "scripts/initial_puppetcert.sh"
 	web.vm.provision "shell", path: "scripts/web/initial_setup.sh"
-    web.vm.provision "puppet_server" do |puppet|
-      puppet.puppet_node = "web.localdomain"
-    end	
 	web.vm.provision "shell", path: "scripts/web/magento_setup.sh"
   end    
   
